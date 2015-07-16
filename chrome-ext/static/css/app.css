@@ -1,0 +1,504 @@
+.row {
+    margin-right: -15px;
+    width: -15px;
+}
+
+#modal-header-main:h1 {
+    font-size: 36px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.alert {
+    background-color: #eee;
+}
+
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -moz-transition: -moz-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+
+.modal-dialog {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    margin-top:200px;
+}
+
+.saveas {
+    width: 125px;
+}
+
+.col-0, .col-xs-1, .col-sm-1, .col-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-12, .col-lg-12, .col-13, .col-14, .col-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-0, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15  {
+    float: left;
+}
+
+.col-0 {
+    width: 0px;
+}
+
+.col-1 {
+    width: 10px;
+}
+
+.col-2 {
+    width: 20px;
+}
+
+.col-3 {
+    width: 30px;
+}
+
+.col-4 {
+    width: 40px;
+}
+
+.col-5 {
+    width: 50px;
+}
+
+.col-6 {
+    width: 60px;
+}
+
+.col-7 {
+    width: 70px;
+}
+
+.col-8 {
+    width: 80px;
+}
+
+.col-9 {
+    width: 90px;
+}
+
+.col-10 {
+    width: 100px;
+}
+
+.col-11 {
+    width: 110px;
+}
+
+.col-12 {
+    width: 120px;
+}
+
+.col-13 {
+    width: 130px;
+}
+
+.col-14 {
+    width: 140px;
+}
+
+.col-15 {
+    width: 150px;
+}
+
+.col-16 {
+    width: 160px;
+}
+
+.col-17 {
+    width: 170px;
+}
+
+.col-18 {
+    width: 180px;
+}
+
+
+.modal-content, .modal-header {
+    position:relative;
+}
+
+.icons-right {
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+
+.icons-left {
+    position:absolute;
+    left:10px;
+    top:10px;
+}
+
+.header-icon {
+    height:25px;
+}
+
+#back-icon {
+    display:none;
+}
+
+.modal-header-main {
+    display:block;
+}
+
+.margin-20 {
+    margin-top:20px;
+}
+
+#modal-header-settings, #modal-header-mail, #modal-mail, #modal-settings, #modal-header-first-time-alert, #modal-first-time-alert, #settings-icon {
+    display:none;
+}
+
+#modal-settings {
+    height: 130px;
+}
+
+#modal-first-time-alert {
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px)
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: none;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    margin-top: 50%;
+}
+
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-body {
+    position: relative;
+    padding: 10px;
+}
+
+.modal-footer {
+    padding: 19px 20px 20px;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.songs {
+    border: 1px #fff solid; background-color: #1d1d1d; padding: 18px; color: #ffffff;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    word-wrap: break-word;
+    text-wrap: unrestricted;
+    height: 100%;
+    text-decoration: inherit;
+    -moz-box-shadow: inset 0px 0px 0px 1px #fff;
+    opacity: 0.9; target-name:new; target-new:tab;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #fff;
+    box-shadow: inset 0px 0px 0px 1px #fff;
+
+}
+.link_content {
+    display:none;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 300px;
+    width: 450px;
+}
+h1, h2, h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+}
+
+h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+
+#search-song-title {
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+#search-song-artist {
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.album-art {
+    vertical-align: middle;
+    line-height: 57px;
+}
+
+.center {
+    text-align:center;
+    margin:0 auto;
+    float:center;
+}
+
+.left {
+    text-align:left;
+    /*width:5px;*/
+}
+
+.right {
+    text-align:left;
+}
+
+.modal-content {
+    background-color:black;
+    /*opacity:0.85;*/
+    z-index:9999;
+}
+
+.close {
+    color:white;
+    opacity:0.5;
+}
+
+.close:hover {
+    color:white;
+    opacity:0.5;
+}
+
+.gray {
+    color:grey;
+}
+
+.min-margin {
+    margin:2px;
+}
+
+.white-curved-border {
+    border: 1px solid white;
+    border-radius:6px;
+    padding:4px;
+}
+
+.no-margin {
+    margin:0;
+}
+
+.song-info {
+    vertical-align: middle;
+}
+
+#search-info {
+}
+
+.modal-body {
+    padding:10px;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+
+    background: black;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size:18px;
+}
+
+.margin10 {
+    width:10px;
+}
+
+.modal-header.close {
+    margin-top:-2px;
+}
+
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+
+#results-header {
+    font-size:36px;
+}
+
+.modal-header {
+    height:100px;
+}
+
+#modal-body-columns {
+    font-size:10px;
+    margin-top:-5px;
+    height:10px;
+}
+
+.song-result {
+    border-bottom: 1px solid #e5e5e5;
+    padding:12px 0px 2px;
+    min-height:50px;
+    font-size:12px;
+    margin: 0 auto;
+}
+
+.setting-option {
+    border-bottom: 1px solid #e5e5e5;
+    padding:12px 0px 12px;
+    min-height:50px;
+    font-size:12px;
+    margin: 0 auto;
+}
+
+.modal-footer {
+    border-top:0px;
+}
+
+.song-links {
+    position:relative;
+}
+
+.song-num, .song-links {
+    padding:0px;
+}
+
+.song-name, .song-preview-links {
+    margin-top:6px;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+.song-powered-by {
+    margin-top:15px;
+    text-align:center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.song-quality {
+    margin-top:15px;
+    text-align:center;
+}
+
+.song-saveas-link {
+    position:absolute;
+    margin:7px 23px;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #FFF;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.setting-title {
+    width: 300px;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal-load {
+    display: block;
+}
+
+.email-load {
+    display: block;
+}
+
+.modal-load {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, .8 )
+                    url('http://i.imgur.com/Sokv5qD.gif')
+                    50% 50%
+                    no-repeat;
+}
+
+/*http://gopage.com/themes/gopagenewdesign/img/loading.gif*/
+/*http://www.speedyracer.com/catalog/view/theme/hoverstyle/image/ajax-loader.gif*/
+.email-load {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, .8 )
+                    url('http://www.speedyracer.com/catalog/view/theme/hoverstyle/image/ajax-loader.gif')
+                    50% 50%
+                    no-repeat;
+}

@@ -1,0 +1,185 @@
+<div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+                <div class='icons-right'>
+                    <span class='header-icon-span'>
+                        <a class='header-mail' href='javascript:void(0);'>
+                            <img class='header-icon' id='mail-icon'>
+                        </a>
+                    </span>
+                    <span class='header-icon-span'>
+                        <a class='header-mail' href='javascript:void(0);'>
+                            <img class='header-icon' id='settings-icon'>
+                        </a>
+                    </span>
+                    <span class='header-icon-span'>
+                        <a class='header-mail' href='javascript:void(0);'>
+                            <img class='header-icon' id='close-icon'>
+                        </a>
+                    </span>
+                </div>
+                <div class='icons-left'>
+                    <span class='header-icon-span'>
+                        <a href='javascript:void(0);'>
+                            <img class='back-icon header-icon' id='back-icon'>
+                        </a>
+                    </span>
+                </div>
+                <div id='modal-header-main'>
+                    <h1 class="modal-title center" id="modal-headline">
+                        SEARCHING THE WEB FOR LINKS...
+                    </h1>
+                    <div id="search-info" style="text-align: center;">
+                        <div class="album-art" style="display:inline-block;">
+                            <img id='song-album-art' height="40" width="auto" src="#" />
+                        </div>
+                        <div class="song-info" style="display:inline-block; text-align: left;">
+                            <h5 id="search-song-title" class="min-margin">Can't remember to forget you.
+                            </h5>
+                            <h5 id="search-song-artist" class="min-margin">
+                                by Shakira, Rihanna
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div id='modal-header-first-time-alert'>
+                    <h1 class='modal-title center margin-20'>
+                        WELCOME, FIRST TIME USER!
+                    </h1>
+                </div>
+                <div id='modal-header-settings'>
+                    <h1 class='modal-title center margin-20'>
+                        SETTINGS
+                    </h1>
+                </div>
+                <div id='modal-header-mail'>
+                    <h1 class='modal-title center margin-20'>
+                        TELL US WHAT YOU THINK!
+                    </h1>
+                    <br>
+                    <h4 class="center">Let us know of any features you want added, or simply say hi.</h4>
+                </div>
+            </div>
+            <div class="email-load">
+            </div>
+            <div class="modal-body">
+                <div id='modal-main'>
+                    <div class="modal-load">
+                    </div>
+                    <div id="modal-body-columns" class="row">
+                        <div class="col-4">
+                            <div class="center">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="center">
+                                Song name
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding-left:33px;">
+                            <div class="center">
+                                Powered by
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="center">
+                                Quailty
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="left" style="white-space:nowrap;">
+                                Preview&nbsp;&nbsp;&nbsp;&nbsp;Download&nbsp;&nbsp;&nbsp;&nbsp;Save As
+                            </div>
+                        </div>
+                    </div>
+                    <div id="song-results">
+                        <div class="row song-result">
+                            <div class="col-4 song-num">
+                                <div class="numberCircle">1</div>
+                            </div>
+                            <div class="col-12 song-name margin-10" style="width:144px;">
+                            </div>
+                            <div class="col-9 song-powered-by" style="text-wrap:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="col-5 song-quality" style="white-space:nowrap; padding-left:10px; padding-right:10px;">
+                            </div>
+                            <div class="col-12 song-links">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="javascript:void" class="song-preview-link">
+                                    <img src="#" height="40" , width="40">
+                                </a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="javascript:void" class="song-download-link">
+                                    <img src="#" height="35" , width="35">
+                                </a>
+                                <a href="javascript:void" class="song-saveas-link">
+                                    <img src="#" height="25" , width="25">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='modal-first-time-alert'>
+                    <div class="alert-div">
+                        We noticed this is your first time downloading an mp3 with our extension
+                        <br>Please view our <a href="#" id="copyrightPolicy">Terms of Use</a> before continuing
+                    </div>
+                </div>
+                <div id='modal-mail'>
+                    <div class="email-div">
+                        <input type="text" id="replyTo" placeholder="Your name" name="fname">
+                        <br>
+                        <br>
+                        <textarea name="address" cols="30" rows="4" placeholder="Message" id="messagebody"></textarea>
+                        <br>
+                        <br>
+                        <input type="submit" id="sendemail" value="Send" class="btn btn-primary">
+                    </div>
+                </div>
+                <div id='modal-settings'>
+                    <div class="setting-row">
+                        <div class="col-md-6">
+                            <h3>Youtube Mp3 Conversion</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="toggle btn btn-primary" data-toggle="toggle">
+                                <input type="checkbox" id="youtubeToggle" unchecked>
+                                <div class="toggle-group">
+                                    <label class="toggle-on btn btn-primary" id="youtubeToggleOn">On</label>
+                                    <label class="toggle-off btn active" id="youtubeToggleOff">Off</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting-row">
+                        <div class="col-md-6">
+                            <h3>Max. Number of Results to Display</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <select id="numResults">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer center">
+                <h5>Find this useful? Want better funtionality and integration with more music web players?
+                    <br>Donate a couple dollars to keep us going.</h5>
+                <br>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHPwYJKoZIhvcNAQcEoIIHMDCCBywCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCQqpOxLMxHnyq/I4FScCCVQm4p0W/Y0M24NkGwHnL9ISoCpFDbQtHfYg11NUoE7cjKPia//4o+Qj2x0M1S79FjsMmcleliF2UDSGOjf0SjnJRwhHefC8b8BFtTZ6piy96QvtKHeK+plBaHzO3dmkZaLcTN6qvrRF6+g2pUg/GwEDELMAkGBSsOAwIaBQAwgbwGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIhdpZqIlF3i2AgZis6DeSOpnRxc6ce+B23uCmucR7zC7Su+IyhKTtF52Ito7ERCWD9sS9RYLXWYGGmkDfzvJ6/yCr60YzV9BaepdA0a7cCgnQjzjdfyACxJOnALELz8S/bRaOW/enYIb7wvfgl/cl1PTn1O0WopNK4bty1y5DjJMBy6XxYtYkNtGjY6dnEV3CYHhsBdkqrx2AvY7yXvJnFO80laCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE0MDcxNTA4MDYzMlowIwYJKoZIhvcNAQkEMRYEFLa4YWGGvZ+KdTa2qzDlRnFDoP1RMA0GCSqGSIb3DQEBAQUABIGAOAUAfQSjgQ75YZXFjlv5JhhssIyyeXOe44Pj5WvFb5zQj+D0y9+h8wFsO3+aGjUQjn1Z1XARPOvb58v35UAC8FVlbiNHye3aS3IL/ux7BdnL/gzzYD1ZVxVQC6BNaZLBENJ/wSor/nRvpyXYzjx4FMD875vytrM/zubyM1vP3eE=-----END PKCS7-----">
+                    <input type="image" id="donateButton" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

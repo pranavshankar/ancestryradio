@@ -1,0 +1,58 @@
+{
+  "manifest_version": 2,
+
+  "name": "Ancestry Radio",
+  "description": "This extension searches the web for mp3 links to songs playing on Pandora",
+  "version": "0.0.1.3",
+
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "permissions":
+  [
+    "downloads", "tabs"
+  ],
+  "content_scripts":
+  [
+    {
+      "matches": ["http://person.ancestry.com/tree/*"],
+      "js":
+        [
+        "static/js/jquery.min.js",
+        // "static/js/jquery-ui.min.js",
+        // "static/js/spin.min.js",
+        // "static/js/shiningimage.js",
+        // "static/js/utils.js",
+        "static/js/ready.js"
+        // "static/js/bootbox.min.js",
+        // "static/js/content_script.js",
+        // "static/js/bootstrap.js",
+        // "static/js/bootstrap-toggle.min.js"
+        ]
+        // ],
+      // "css":
+      //   ["static/css/popup.css"],
+      //   "run_at":"document_end"
+    }
+  ],
+
+  "background":
+  {
+    "page": "static/templates/background.html",
+    "persistent": true
+  },
+
+  "browser_action":
+  {
+    "default_icon": "static/img/dl.png"
+  },
+
+  "icons":
+  {
+    "16": "static/img/dl.png",
+    "48": "static/img/dl.png",
+    "128": "static/img/dl.png"
+  },
+  "web_accessible_resources" :[
+    "static/*"
+  ]
+}
