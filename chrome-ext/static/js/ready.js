@@ -63,9 +63,10 @@ function get_birth_year() {
 }
 
 function inject_spotify_button() {
-  $('#personPageStory').prepend('<img src="http://www.iconarchive.com/download/i76693/xenatt/the-circle/App-Spotify.ico" id="spotify_button" width="40" height="40" ><a>See what this person would have listened to.</a>');
+  $('#personPageStory').prepend('<div id="my_div" class="lifeStorySec"><img src="http://www.iconarchive.com/download/i76693/xenatt/the-circle/App-Spotify.ico" id="spotify_button" width="40" height="40" ><a>See what this person would have listened to.</a></div>');
   $('#spotify_button').click(function() { window.open("http://www.google.com", "_blank");} );
-  alert(get_birth_year());
+  
+  // $('#my_div').left()
 }
 
 inject_spotify_button();
