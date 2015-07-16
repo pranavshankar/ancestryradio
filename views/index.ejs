@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <title>Ancestry Radio</title>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script>
+		birthYear = <%=birthYear%>;
+	</script>
+</head>
+<body ng-app="radioApp" ng-controller="IndexCtrl">
+	{{year}}
+	{{json}}
+	<script src="vendor/angular.min.js"></script>
+	<script src="module.js"></script>
+    <% scripts.forEach(function(file) { %>
+    <script src= <%=file%>></script>
+    <% }); %>
+</body>
+</html>
