@@ -10,9 +10,12 @@
 	</script>
 </head>
 <body ng-app="radioApp" ng-controller="IndexCtrl">
-	{{year}}
-	{{json}}
+	<h1>{{year}}</h1>
+	<div ng-if="tracks">
+		<iframe ng-src="{{trustSrc(tracks)}}" style="width:300px; height:1000px;" frameborder="0" allowTransparency="true"></iframe>
+	</div>
 	<script src="vendor/angular.min.js"></script>
+	<script src="vendor/angular-sanitize.min.js"></script>
 	<script src="module.js"></script>
     <% scripts.forEach(function(file) { %>
     <script src= <%=file%>></script>
