@@ -1,1 +1,1 @@
-angular.module('radioApp', []);
+angular.module('radioApp', ['ngSanitize']);
