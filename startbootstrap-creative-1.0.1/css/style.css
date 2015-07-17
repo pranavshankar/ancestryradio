@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: Source-Sans;
-    src: url('../fonts/Source-Sans/SourceSansPro-lt.otf') format("opentype");
+    src: url('../fonts/Source-Sans/SourceSansPro-Light.otf') format("opentype");
     font-weight: lighter;
 }
 
@@ -67,20 +67,28 @@ body {
 }
 
 .logo {
-    height: 65px;
+    height: 75px;
     width: 220px;
     float: left;
+    padding-top: 3px;
 }
 
 .ageValue {
     margin-left: 5px;
+    padding: 0px;
     float: left;
     color: #97B82E;
 }
 
+.player {
+    background-color: #40403F;
+}
+
 .ageLabel {
-    font-size: 10px;
+    font-size: 14px;
     float: left;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
 .title {
@@ -136,6 +144,17 @@ body {
     height: 671px;
     border: 0px;
     font-family: Source-Sans;
+    font-size: 16px;
+}
+
+.trackset {
+    font-size: 16px;
+    font-family: Source-Sans;
+}
+
+#outerWidgetContainer {
+    font-size: 16px;
+    font-family: Source-Sans;
 }
 
 .name {
@@ -146,6 +165,14 @@ body {
 .birthInfo {
     font-size: 13px;
     margin: 0 0 0px;
+}
+
+.track-info {
+    font-size: 16px;
+}
+
+#widgetContainer {
+    font-size: 16px;
 }
 
 .rotate {
