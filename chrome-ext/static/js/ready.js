@@ -66,7 +66,7 @@ function inject_spotify_button() {
   $('#personPageStory').prepend('<div id="my_div" class="lifeStorySec"><img src="http://www.iconarchive.com/download/i76693/xenatt/the-circle/App-Spotify.ico" id="spotify_button" width="40" height="40" ><a>See what this person would have listened to.</a></div>');
   $('#spotify_button').click(function() { window.open("http://www.google.com", "_blank");} );
   
-  // $('#my_div').left()
+  $('#my_div').css("left", $('lifeStoryNarrative').css('left'));
 }
 
 inject_spotify_button();

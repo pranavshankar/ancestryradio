@@ -56,6 +56,13 @@ body {
     font-weight: lighter;
 }
 
+.sliderContainer {
+    margin-top: 39px;
+    margin-left: 37px;
+    margin-bottom: 38px;
+    margin-right: 41px;
+}
+
 .landingImage {
     height: 1024px;
     width: 1011px;

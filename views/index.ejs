@@ -51,21 +51,28 @@
 
                     <div class="personInfo">
                         <p class="name">{{name}}</p>
-                        <p class="birthInfo">When Ethel was {{age}} in {{year}}, these were<br> some of the popular new songs.</p>
-                        <form method="post" action="demoform.asp">
-                            <label for="age" class="ageLabel">Age: </label>
-                            <output name="amount" for="age" class="ageValue">50</output>
-                            <input type="range" class="" data-show-value="true" data-popup-enabled="true" name="age" id="ageInput" value="50" min="0" max="100" oninput="amount.value=ageInput.value">
-                        </form>
+                        <p class="birthInfo">Ethel was {{age}} in {{year}}.
                     </div>
                 </div>
             </div>
 
-            <div class="spotifyContent">
-            	<div ng-if="tracks">
-					<iframe ng-src="{{trustSrc(tracks)}}" style="width:351px; height:2000px;" frameborder="0" allowTransparency="true"></iframe>
-				</div>
+            <div class="spotifyContentContainer">
+
+                <div class="sliderContainer">
+                    <form method="post" action="demoform.asp">
+                        <label for="age" class="ageLabel">Age: </label>
+                        <output name="amount" for="age" class="ageValue">50</output>
+                        <input type="range" class="" data-show-value="true" data-popup-enabled="true" name="age" id="ageInput" value="50" min="0" max="100" oninput="amount.value=ageInput.value">
+                    </form>
+                </div>
+
+                <div class="spotifyContent">
+                    <div ng-if="tracks">
+                        <iframe ng-src="{{trustSrc(tracks)}}" style="width:351px; height:2000px;" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                </div>
             </div>
+
         </div>
 
         <div class="landingImage">

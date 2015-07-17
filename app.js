@@ -27,7 +27,7 @@ app.get('/radio', function(request, response) {
 	var name = request.query.name;
 	var obj = {
 		scripts: scripts,
-		birthYear: birthYear
+		birthYear: birthYear,
 		name: name};
 	response.render('index', obj);
 });
