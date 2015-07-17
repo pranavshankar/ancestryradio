@@ -8,6 +8,7 @@ angular.module('radioApp')
 			$scope.age = DEFAULT_AGE;
 			$scope.year = $window.birthYear + $scope.age;
 			$scope.person = $window.name;
+			$scope.lastName = $window.last;
 
 			$scope.changeYear = function(age) {
 				$scope.year = $window.birthYear + parseInt($scope.age);
@@ -16,6 +17,14 @@ angular.module('radioApp')
 
 			$scope.trustSrc = function(src) {
 				return $sce.trustAsResourceUrl(src);
+			};
+
+			$scope.maxLength = function() {
+				var year = 2015 - birthYear;
+				if (year > 100) {
+					return 100;
+				}
+				return year;
 			};
 
 			var setTracks = function() {

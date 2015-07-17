@@ -25,10 +25,12 @@ app.get('/radio', function(request, response) {
 	var birthYear = request.query.birthYear;
 	// var location = request.query.location;
 	var name = request.query.name;
+	var last = request.query.lastName;
 	var obj = {
 		scripts: scripts,
 		birthYear: birthYear,
-		name: name};
+		name: name,
+		last: last};
 	response.render('index', obj);
 });
 

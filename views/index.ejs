@@ -28,6 +28,7 @@
 	<script>
 		birthYear = <%=birthYear%>;
 		name = '<%=name%>';
+		last = '<%=last%>';
 	</script>
 </head>
 <body ng-app="radioApp" ng-controller="IndexCtrl">
@@ -50,7 +51,7 @@
                     </div>
 
                     <div class="personInfo">
-                        <p class="name">{{person}}</p>
+                        <p class="name">{{person}} {{lastName}}</p>
                         <p class="birthInfo">{{person}} was {{age}} in {{year}}.
                     </div>
                 </div>
@@ -63,7 +64,7 @@
                     <form method="post" action="demoform.asp">
                         <label for="age" class="ageLabel">Age: </label>
                         <output name="amount" for="age" class="ageValue">{{age}}</output>
-                        <input ng-model="age" ng-change="changeYear(age)" type="range" class="" data-show-value="true" data-popup-enabled="true" name="age" id="ageInput" value="{{age}}" min="0" max="100" oninput="amount.value=ageInput.value">
+                        <input ng-model="age" ng-change="changeYear(age)" type="range" class="" data-show-value="true" data-popup-enabled="true" name="age" id="ageInput" value="{{age}}" min="0" max="{{maxLength()}}" oninput="amount.value=ageInput.value">
                     </form>
                 </div>
 
