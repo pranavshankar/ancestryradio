@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Ancestry Radio</title>
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+<!--     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" id="mystyle">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
 	<script>
 		birthYear = <%=birthYear%>;
+		name = <%=name%>;
 	</script>
 </head>
 <body ng-app="radioApp" ng-controller="IndexCtrl">
-	<h1>{{year}}</h1>
-	<div ng-if="tracks">
-		<iframe ng-src="{{trustSrc(tracks)}}" style="width:300px; height:1000px;" frameborder="0" allowTransparency="true"></iframe>
-	</div>
+	    <div class="mycontainer">
+
+        <div class="mainContent">
+            <div class="headerInfo">
+                <div class="title">
+                    <img src="img/ancestry_logo.png" class="logo"/>
+
+                    <div class="radioContainerContainer">
+                        <div class="radioContainer">
+                            <h2 class="radioText rotate">RADIO</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <div class="personPicture circular">
+                    </div>
+
+                    <div class="personInfo">
+                        <p class="name">{{name}}</p>
+                        <p class="birthInfo">When Ethel was {{age}} in {{year}}, these were<br> some of the popular new songs.</p>
+                        <form method="post" action="demoform.asp">
+                            <label for="age" class="ageLabel">Age: </label>
+                            <output name="amount" for="age" class="ageValue">50</output>
+                            <input type="range" class="" data-show-value="true" data-popup-enabled="true" name="age" id="ageInput" value="50" min="0" max="100" oninput="amount.value=ageInput.value">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spotifyContent">
+            	<div ng-if="tracks">
+					<iframe ng-src="{{trustSrc(tracks)}}" style="width:351px; height:2000px;" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+            </div>
+        </div>
+
+        <div class="landingImage">
+        </div>
+    </div>
+	
 	<script src="vendor/angular.min.js"></script>
 	<script src="vendor/angular-sanitize.min.js"></script>
 	<script src="module.js"></script>

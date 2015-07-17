@@ -23,10 +23,12 @@ scriptsFiles.forEach(function(fileName) {
 
 app.get('/radio', function(request, response) {
 	var birthYear = request.query.birthYear;
-	var location = request.query.location;
+	// var location = request.query.location;
+	var name = request.query.name;
 	var obj = {
 		scripts: scripts,
-		birthYear: birthYear}
+		birthYear: birthYear
+		name: name};
 	response.render('index', obj);
 });
 
