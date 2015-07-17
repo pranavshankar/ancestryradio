@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Source-Sans;
+    src: url('../fonts/Source-Sans/SourceSansPro-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: Source-Sans;
+    src: url('../fonts/Source-Sans/SourceSansPro-lt.otf') format("opentype");
+    font-weight: lighter;
+}
+
+
+@font-face {
+    font-family: RitzFLF;
+    src: url('../fonts/RitzFLF.ttf') format("truetype");
+}
+
+body {
+    background-color: #2B2B2A;
+    font-family: Source-Sans;
+    color: #EFEFEF;
+}
+
+.mycontainer {
+    height: 100%;
+    width: 1440px;
+    min-width: 1440px;
+    overflow: visible;
+}
+
+.mainContent {
+    height: 1024px;
+    width: 429px;
+    float: left;
+    background-color: #40403F;
+}
+
+.headerInfo {
+    background-color: #2B2B2A;
+    height: 277px;
+    width: 429px;
+    border-bottom: 2px solid;
+    border-color: #97B82E
+}
+
+.spotifyContent {
+    height: 671px;
+    width: 351px;
+    margin-top: 39px;
+    margin-left: 37px;
+    margin-bottom: 38px;
+    margin-right: 41px;
+    background-color: #2B2B2A;
+    overflow: visible;
+    font-family: Source-Sans;
+    font-weight: lighter;
+}
+
+.landingImage {
+    height: 1024px;
+    width: 1011px;
+    float: left;
+    background-size: 1011px 1024px;
+    background-repeat: no-repeat;
+    /*background-image: linear-gradient(to bottom, rgba(151, 184, 46, 0.1) 0%, rgba(151, 184, 46, 0.1) 100%), url(../img/BroxSistersRadioTeddyBear.jpg);*/
+    background-image: url(../img/BroxSistersRadioTeddyBear2.jpg);
+}
+
+.logo {
+    height: 65px;
+    width: 220px;
+    float: left;
+}
+
+.ageValue {
+    margin-left: 5px;
+    float: left;
+    color: #97B82E;
+}
+
+.ageLabel {
+    font-size: 10px;
+    float: left;
+}
+
+.title {
+    width: 429px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.radioContainerContainer {
+    display: inline;
+    float: left;
+}
+
+.radioContainer {
+    -webkit-transform: rotate(-10deg);
+}
+
+.radioText {
+    display: inline;
+    font-size: 42px;
+    font-family: RitzFLF;
+}
+
+.person {
+    margin-left: 37px;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 27px;
+}
+
+.personInfo {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+}
+
+.circular {
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+
+.personPicture {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-image: url(../img/cat.jpg);
+    background-size: 100px 100px;
+}
+
+.spotifyPlaylist {
+    width: 351px;
+    height: 671px;
+    border: 0px;
+    font-family: Source-Sans;
+}
+
+.name {
+    font-size: 36px;
+    margin: 0 0 0px;
+}
+
+.birthInfo {
+    font-size: 13px;
+    margin: 0 0 0px;
+}
+
+.rotate {
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
