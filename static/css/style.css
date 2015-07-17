@@ -43,6 +43,10 @@ body {
     border-color: #97B82E
 }
 
+.instruction {
+    font-size: 14px;
+}
+
 .spotifyContent {
     height: 671px;
     width: 351px;
@@ -74,10 +78,11 @@ body {
 }
 
 .logo {
-    height: 75px;
-    width: 220px;
+    height: 38px;
+    width: 184px;
     float: left;
     padding-top: 3px;
+    margin-left: 20px;
 }
 
 .ageValue {
@@ -142,8 +147,9 @@ body {
     width: 100px;
     height: 100px;
     float: left;
-    background-image: url(../img/cat.jpg);
+    background-image: url(../img/ethel_beavers.png);
     background-size: 100px 100px;
+    margin-top: -10px;
 }
 
 .spotifyPlaylist {
@@ -167,10 +173,11 @@ body {
 .name {
     font-size: 36px;
     margin: 0 0 0px;
+    font-weight: lighter;
 }
 
 .birthInfo {
-    font-size: 13px;
+    font-size: 16px;
     margin: 0 0 0px;
 }
 
