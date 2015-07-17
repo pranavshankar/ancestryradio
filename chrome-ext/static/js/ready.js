@@ -76,8 +76,8 @@ function get_image_url() {
 }
 
 function inject_spotify_button() {
-  $('#personPageStory').prepend('<div id="my_div" class="lifeStorySec" style="margin-left: 18px; margin-bottom: 30px;"><img src="http://www.iconarchive.com/download/i76693/xenatt/the-circle/App-Spotify.ico" id="spotify_button" width="45" height="45" style="margin-bottom: -15px;"><a style="padding-left: 40px; font-size: 20px;">See what this person was listening to.</a></div>');
-  $('#spotify_button').click(function() { window.open("https://murmuring-crag-3933.herokuapp.com/radio?birthYear=" + get_birth_year() + "&name=" + get_first_name() + "&lastName=" + get_last_name() + "&imgUrl=" + get_image_url(), "_blank");} );
+  $('#personPageStory').prepend('<div id="my_div" class="lifeStorySec" style="margin-left: 18px; margin-bottom: 30px;"><img src="http://www.iconarchive.com/download/i76693/xenatt/the-circle/App-Spotify.ico" id="spotify_button" width="45" height="45" style="margin-bottom: -15px;"><a id="spotify_link" style="padding-left: 40px; font-size: 20px;">See what this person was listening to.</a></div>');
+  $('#spotify_link').click(function() { window.open("https://murmuring-crag-3933.herokuapp.com/radio?birthYear=" + get_birth_year() + "&name=" + get_first_name() + "&lastName=" + get_last_name() + "&imgUrl=" + get_image_url(), "_blank");} );
   
   $('#my_div').css("left", $('lifeStoryNarrative').css('left'));
 }
