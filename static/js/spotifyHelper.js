@@ -7,7 +7,6 @@ angular.module('radioApp')
 				var startYear = birthYear;
 				var endYear = birthYear;
 				var URI = "https://api.spotify.com/v1/search?q=year:" + startYear + "-" + endYear + "&type=track&limit=20";
-				console.log(URI);
 				var promise = $http.get(URI);
 				return promise;
 			};
