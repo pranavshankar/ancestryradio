@@ -29,6 +29,7 @@
 		birthYear = <%=birthYear%>;
 		name = '<%=name%>';
 		last = '<%=last%>';
+		imgUrl = '<%=imgUrl%>';
 	</script>
 </head>
 <body ng-app="radioApp" ng-controller="IndexCtrl">
@@ -47,7 +48,7 @@
                 </div>
 
                 <div class="person">
-                    <div class="personPicture circular">
+                    <div class="personPicture circular" ng-style="picStyle">
                     </div>
 
                     <div class="personInfo">

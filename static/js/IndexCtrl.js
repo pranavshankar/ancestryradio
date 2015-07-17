@@ -9,6 +9,9 @@ angular.module('radioApp')
 			$scope.year = $window.birthYear + $scope.age;
 			$scope.person = $window.name;
 			$scope.lastName = $window.last;
+			$scope.imgUrl = $window.imgUrl;
+
+			$scope.picStyle = {'background-image': 'url(' + $scope.imgUrl + ')'};
 
 			$scope.changeYear = function(age) {
 				$scope.year = $window.birthYear + parseInt($scope.age);

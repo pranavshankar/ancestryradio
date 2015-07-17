@@ -26,11 +26,13 @@ app.get('/radio', function(request, response) {
 	// var location = request.query.location;
 	var name = request.query.name;
 	var last = request.query.lastName;
+	var imgUrl = request.query.imgUrl;
 	var obj = {
 		scripts: scripts,
 		birthYear: birthYear,
 		name: name,
-		last: last};
+		last: last,
+		imgUrl: imgUrl};
 	response.render('index', obj);
 });
 
