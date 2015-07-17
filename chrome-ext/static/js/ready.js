@@ -62,9 +62,18 @@ function get_birth_year() {
   return $('.userCardSubTitle')[0].textContent.split("–")[0];
 }
 
+function get_first_name() {
+  return $('.userCardTitle')[1].textContent.split(" ")[0];
+}
+
+function get_last_name() {
+  var name = $('.userCardTitle')[1].textContent.split(" ");
+  return name[name.length - 1];
+}
+
 function inject_spotify_button() {
   $('#personPageStory').prepend('<div id="my_div" class="lifeStorySec"><img src="http://www.iconarchive.com/download/i76693/xenatt/the-circle/App-Spotify.ico" id="spotify_button" width="40" height="40" ><a>See what this person would have listened to.</a></div>');
-  $('#spotify_button').click(function() { window.open("http://www.google.com", "_blank");} );
+  $('#spotify_button').click(function() { window.open("https://murmuring-crag-3933.herokuapp.com/radio?birthYear=1920&name=" + get_first_name() + "&lastName=" + get_last_name(), "_blank");} );
   
   $('#my_div').css("left", $('lifeStoryNarrative').css('left'));
 }
@@ -125,8 +134,6 @@ $.fn.waitUntilExists    = function (handler, shouldRunHandlerOnce, isChild) {
 /** Creates a user in the db and injects scripts and download button into the
   * webpage. */
 function startProcess() {
-
-    alert("yes");
 
     // We need to inject our scripts at different times based on the music player
     // SYNCHRONOUS function, domain specific.

@@ -59,7 +59,7 @@
             <div class="spotifyContentContainer">
 
                 <div class="sliderContainer">
-                    <p class="intruction">Use the slider to adjust her age, and click play below to hear her playlist.</p>
+                    <!-- <p class="intruction">Use the slider to adjust her age, and click play below to hear her playlist.</p> -->
                     <form method="post" action="demoform.asp">
                         <label for="age" class="ageLabel">Age: </label>
                         <output name="amount" for="age" class="ageValue">{{age}}</output>
@@ -69,7 +69,7 @@
 
                 <div class="spotifyContent">
                     <div ng-if="tracks">
-                        <iframe ng-src="{{trustSrc(tracks)}}" style="width:351px; height:2000px;" frameborder="0" allowTransparency="true"></iframe>
+                        <iframe ng-src="{{trustSrc(tracks)}}" style="width:351px; height:431px;" frameborder="0" allowTransparency="true"></iframe>
                     </div>
                 </div>
             </div>
