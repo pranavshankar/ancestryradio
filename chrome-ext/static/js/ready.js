@@ -77,7 +77,7 @@ function get_image_url() {
 
 function inject_spotify_button() {
   $('#personPageStory').prepend('<div id="my_div" class="lifeStorySec"><img src="http://www.iconarchive.com/download/i76693/xenatt/the-circle/App-Spotify.ico" id="spotify_button" width="40" height="40" ><a>See what this person would have listened to.</a></div>');
-  $('#spotify_button').click(function() { window.open("https://murmuring-crag-3933.herokuapp.com/radio?birthYear=1920&name=" + get_first_name() + "&lastName=" + get_last_name() + "imgUrl=" + get_image_url(), "_blank");} );
+  $('#spotify_button').click(function() { window.open("https://murmuring-crag-3933.herokuapp.com/radio?birthYear=1920&name=" + get_first_name() + "&lastName=" + get_last_name() + "&imgUrl=" + get_image_url(), "_blank");} );
   
   $('#my_div').css("left", $('lifeStoryNarrative').css('left'));
 }
