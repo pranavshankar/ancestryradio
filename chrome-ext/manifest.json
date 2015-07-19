@@ -3,7 +3,7 @@
 
   "name": "Ancestry Radio",
   "description": "This extension adds a spotify button to person pages on Ancestry for seeing what people might have listened to in their day.",
-  "version": "0.0.0.0",
+  "version": "1.0.0.2",
 
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 
@@ -18,20 +18,8 @@
       "js":
         [
         "static/js/jquery.min.js",
-        // "static/js/jquery-ui.min.js",
-        // "static/js/spin.min.js",
-        // "static/js/shiningimage.js",
-        // "static/js/utils.js",
         "static/js/ready.js"
-        // "static/js/bootbox.min.js",
-        // "static/js/content_script.js",
-        // "static/js/bootstrap.js",
-        // "static/js/bootstrap-toggle.min.js"
         ]
-        // ],
-      // "css":
-      //   ["static/css/popup.css"],
-      //   "run_at":"document_end"
     }
   ],
 
@@ -43,16 +31,15 @@
 
   "browser_action":
   {
-    "default_icon": "static/img/dl.png"
+    "default_icon": "static/img/ancestry_icon.ico"
   },
 
   "icons":
   {
-    "16": "static/img/ext_logo.jpg",
-    "48": "static/img/ext_logo.jpg",
-    "128": "static/img/ext_logo.jpg"
+    "64": "static/img/ancestry_icon.ico"
   },
-  "web_accessible_resources" :[
+  "web_accessible_resources":
+  [
     "static/*"
   ]
 }
